@@ -1,0 +1,1 @@
+removeCycle(head);

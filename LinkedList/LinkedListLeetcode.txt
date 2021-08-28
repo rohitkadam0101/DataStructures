@@ -1,0 +1,17 @@
+// Reverse Linked List
+
+class Solution {
+public:
+    ListNode* reverseList(ListNode* head) {
+        ListNode *curr = head;
+        ListNode *ne,*prev = NULL;
+        while(curr){
+            ne = curr->next;
+            curr->next = prev;
+            prev = curr;
+            curr = ne;
+        }
+        return prev;
+        
+    }
+};
